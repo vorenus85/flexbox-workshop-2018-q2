@@ -1,0 +1,28 @@
+{
+  "name": "flexbox-workshop-2018-q2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vorenus85/flexbox-workshop-2018-q2.git"
+  },
+  "author": "Janos Perge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vorenus85/flexbox-workshop-2018-q2/issues"
+  },
+  "homepage": "https://github.com/vorenus85/flexbox-workshop-2018-q2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
