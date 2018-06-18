@@ -514,7 +514,7 @@ h1, h2, h3 {
     }
 
     .example-5 {
-        align-items: flex-start;
+        align-items: center;
         min-height: 450px;
         .ex-item{
             font-size:20px;
@@ -533,6 +533,12 @@ h1, h2, h3 {
                 align-self: baseline;
                 background-color: darkmagenta;
                 font-size: 50px;
+            }
+
+            &:nth-child(4){
+                align-self: baseline;
+                background-color: darkmagenta;
+                font-size: 30px;
             }
         }
     }
