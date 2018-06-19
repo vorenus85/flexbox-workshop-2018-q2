@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.domino-wrapper {
+    padding:  2rem;
+}
+
+.domino {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding:  10px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: red;
+}

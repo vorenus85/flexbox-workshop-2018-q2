@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans";
+    font-size: .9rem;
+}
+
+header {
+    background: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  1em .5em;
+    color: white;
+}
+
+header a {
+    color: white;
+    font-size: 150%;
+}
+
+.flex-item {
+    padding:  10px;
+}
+
+.navigation {
+    order: 1;
+}
+
+.logo {
+    order: 2;
+    margin-left: auto;
+}
+
+.search {
+    order: 4;
+}
+
+.phone {
+    order: 3;
+
+}
+
+.phone {
+    font-size: 200%;
+    margin-left: auto;
+}
+
+.phone .fa {
+    font-size: 150%;
+}
+
+.search a {
+    font-size: 300%;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.navigation {
+    margin: 0;
+    list-style:none;
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+}
+
+.navigation a:hover {
+    background: #00b7f5;
+}
+
+@media all and (max-width: 992px) {
+    html {
+        font-size: .6rem;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 768px) {
+    header {
+        flex-flow: column wrap;
+    }
+
+    .logo {
+        order: -2;
+        margin-left: 0;
+    }
+
+    .phone {
+        order: -1;
+        margin-left: 0;
+    }
+
+    .search {
+        display: none;
+    }
+}

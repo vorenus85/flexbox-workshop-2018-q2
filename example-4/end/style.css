@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+.domino-wrapper {
+    padding:  2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.domino {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding:  10px;
+    display: flex;
+}
+
+.circle-group {
+    display: flex;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: red;
+}
+
+.domino-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.domino-2 {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.domino-2 .circle-2 {
+    align-self: flex-end;
+}
+
+.domino-3 {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.domino-3 .circle-2 {
+    align-self: center;
+}
+
+.domino-3 .circle-3 {
+    align-self: flex-end;
+}
+
+.domino-4 {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.domino-4 .circle-2,
+.domino-4 .circle-4 {
+    align-self: flex-end;
+}
+
+.domino-4 .circle-group {
+    width:  100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.domino-4 .circle-group-2 {
+    align-self: flex-end;
+}
+
+.domino-5 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.domino-5 .circle-3 {
+    align-self: center;
+}
+
+.domino-5 .circle-2,
+.domino-5 .circle-4 {
+    align-self: flex-end;
+}
+
+.domino-5 .circle-group {
+    width:  100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.domino-5 .circle-group-2 {
+    align-self: flex-end;
+}
+
+.domino-6 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.domino-6 .circle-group {
+    flex-flow: column;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+#main > nav,
+#main > aside {
+    background: beige;
+}
+
+header, footer {
+    background: yellowgreen;
+    height: 20vh;
+}
+header, footer, article, nav, aside {
+    padding: 1em;
+}

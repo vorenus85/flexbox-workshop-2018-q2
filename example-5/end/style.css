@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    font-size: 10px;
+}
+
+.card-wrapper {
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.design-switcher {
+    display: flex;
+    margin: 0 10%;
+}
+
+a {
+    color: #666;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.design-switch {
+    font-size: 2rem;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.design-switch:hover {
+    color: pink;
+}
+
+.card-parameter {
+    padding: .5rem 0;
+}
+
+.card-image {
+    padding: 1rem;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-desc {
+    font-size: 1rem;
+}
+
+.card-name {
+    text-transform: uppercase;
+    flex: 1 0 auto;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+}
+
+.card-price-original {
+    font-size: 1rem;
+}
+
+.card-icons {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-icons-favorite {
+    color: red;
+}
+
+.card-icons-stock {
+    color: forestgreen;
+}
+
+.card-item {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 1rem;
+}
+
+.card-action-to-cart {
+    padding: .5rem;
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: 5px solid forestgreen;
+    color: forestgreen;
+    border-radius: 9999em;
+    text-align: center;
+}
+
+.card-action-to-cart:hover {
+    background: forestgreen;
+    color: #fff;
+}
+
+/* design-vertical */
+
+.design-vertical .card-item {
+    flex-direction: column;
+    width: 25%;
+}
+
+.design-vertical .card-desc {
+    display: none;
+}
+
+.design-vertical .card-price {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.design-vertical .card-parameter {
+    text-align: center;
+}
+
+/* /design-vertical */
+
+/* design-horizontal */
+.design-horizontal {
+    flex-direction: row;
+}
+
+.design-horizontal .card-item {
+    flex-direction: column;
+    padding-left: 200px;
+    position: relative;
+    width: 50%;
+}
+
+.design-horizontal .card-desc {
+    display: block;
+    flex: 1 0 auto;
+}
+
+.design-horizontal .card-image {
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.design-horizontal .card-parameter {
+    width: 100%;
+}
+
+.design-horizontal .card-price {
+    justify-content: space-evenly;
+}
+
+/* /design-horizontal */
+
+/* design-grid */
+.design-grid {
+    flex-direction: row;
+}
+
+.design-grid .card-item {
+    flex-direction: column;
+    width: 12.5%;
+}
+
+.design-grid.card-icons,
+.design-grid .card-desc {
+    display: none;
+}
+
+.design-grid .card-name {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.design-grid .card-price {
+    justify-content: space-between;
+}
+
+.design-grid .card-action-to-cart {
+    font-size: 1.2rem;
+}
+
+/* /design-grid */
+
+@media screen and (max-width: 1200px) {
+    .design-horizontal .card-item {
+        width: 100%;
+    }
+
+    .design-vertical .card-item {
+        width: 50%;
+    }
+
+    .design-grid .card-item {
+        width: 25%;
+    }
+}
