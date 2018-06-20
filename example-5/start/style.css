@@ -9,18 +9,18 @@ body {
     font-size: 10px;
 }
 
+a {
+    color: #666;
+    font-weight: 900;
+    text-decoration: none;
+}
+
 .card-wrapper {
     margin: 0 10%;
 }
 
 .design-switcher {
     margin: 0 10%;
-}
-
-a {
-    color: #666;
-    font-weight: 900;
-    text-decoration: none;
 }
 
 .design-switch {

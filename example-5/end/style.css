@@ -186,13 +186,21 @@ a {
     justify-content: space-between;
 }
 
-.design-grid .card-action-to-cart {
+.design-grid .card-price-special {
     font-size: 1.2rem;
+}
+
+.design-grid .card-price-original {
+    font-size: .8rem;
+}
+
+.design-grid .card-action-to-cart {
+    font-size: 1rem;
 }
 
 /* /design-grid */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .design-horizontal .card-item {
         width: 100%;
     }

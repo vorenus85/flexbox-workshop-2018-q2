@@ -222,8 +222,7 @@
 <script>
     $('.design-switch').on('click', function(){
         $('.container').removeClass('design-vertical design-grid design-horizontal');
-        var dataDesign = $(this).data("design");
-        $('.container').addClass(dataDesign);
+        $('.container').addClass($(this).data("design"));
     });
 </script>
 </body>
