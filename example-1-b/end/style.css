@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#main > aside,
+#main > article {
+    flex: 1 1 100%;
+}
+
+#main > nav {
+    background: lightblue;
+}
+
+#main > aside {
+    background: beige;
+}
+
+#main > nav {
+    order: -1;
+    flex: 0 0 100%;
+}
+
+header, footer {
+    background: yellowgreen;
+    height: 20vh;
+}
+
+header, footer, article, nav, aside {
+    padding: 1em;
+}
+
+@media screen and (min-width: 576px) {
+    #main {
+        flex-direction: row;
+    }
+
+    #main > article {
+        flex: 1 1 75%;
+        order: 2;
+    }
+
+    #main > aside {
+        flex: 1 1 25%;
+        order: 1;
+    }
+}
