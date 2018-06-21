@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans";
+    font-size: .9rem;
+}
+
+header {
+    background: skyblue;
+    padding: 1em .5em;
+    color: white;
+}
+
+header a {
+    color: white;
+    font-size: 120%;
+}
+
+.flex-item {
+    padding: 10px;
+}
+
+.logo {
+    margin-left: auto;
+}
+
+.phone {
+    font-size: 200%;
+}
+
+.phone .fa {
+    font-size: 150%;
+}
+
+.search a {
+    font-size: 300%;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.navigation {
+    margin: 0;
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+}
+
+.navigation a:hover {
+    background: #00b7f5;
+}
+
+@media all and (max-width: 992px) {
+    html {
+        font-size: .6rem;
+    }
+}
